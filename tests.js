@@ -59,4 +59,12 @@ it("Should return 10 when 7 is passed ", function() {
     );
   });
 
+it("Should return invalid when a string is passes ", function() {
+    assert(
+      lib.sumOfPrimes("SomeString")=="Invalid Input"))
+    );
+  });
+
+
+
 });
