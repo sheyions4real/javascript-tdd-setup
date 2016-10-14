@@ -42,4 +42,21 @@ it("Should return 10 when 5 is passed ", function() {
     );
   });
 
+it("Should return 10 when 6 is passed ", function() {
+    assert(
+      lib.sumOfPrimes(6)==10))
+    );
+  });
+it("Should return 10 when 7 is passed ", function() {
+    assert(
+      lib.sumOfPrimes(7)==17))
+    );
+  });
+
+it("Should return 10 when 7 is passed ", function() {
+    assert(
+      lib.sumOfPrimes(7)==17))
+    );
+  });
+
 });
