@@ -3,22 +3,43 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-var lib = require('./lib/library.js');
+var lib = require('./lib/sum_of_primes.js');
 
 describe("Test that constants are computed properly", function() {
-  it("should give 10, 4 for constants 2, 5 as a and n respectively", function() {
+  it("Should return 10 when 0 is passed ", function() {
     assert(
-      lib.compareCoefficients(lib.quadraticDerivative(2, 5), { a: 10, n: 4 })
+      lib.sumOfPrimes(0)==false))
     );
   });
-  it("should give 2, 1 for constants 1, 2 as a and n respectively", function() {
+
+it("Should return 10 when 1 is passed ", function() {
     assert(
-      lib.compareCoefficients(lib.quadraticDerivative(1, 2), { a: 2, n: 1 })
+      lib.sumOfPrimes(1)==1))
     );
   });
-  it("should give 8, 1 for constants 4, 2 as a and n respectively", function() {
+
+it("Should return 2 when 2 is passed ", function() {
     assert(
-      lib.compareCoefficients(lib.quadraticDerivative(4, 2), { a: 8, n: 1 })
+      lib.sumOfPrimes(2)== 2))
     );
   });
+
+it("Should return 6 when 3 is passed ", function() {
+    assert(
+      lib.sumOfPrimes(3)==6))
+    );
+  });
+
+it("Should return 6 when 4 is passed ", function() {
+    assert(
+      lib.sumOfPrimes(4)==6))
+    );
+  });
+
+it("Should return 10 when 5 is passed ", function() {
+    assert(
+      lib.sumOfPrimes(5)==10))
+    );
+  });
+
 });
