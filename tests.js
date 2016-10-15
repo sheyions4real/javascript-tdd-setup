@@ -65,9 +65,15 @@ it("Should return invalid when a string is passes ", function() {
     );
   });
 
-it("Should return invalid when -1 is passed10 when 7 is passed ", function() {
+it("Should return invalid when -1 is passed ", function() {
     assert(
       lib.sumOfPrimes(-1)=="Should not recieve negative input"))
+    );
+  });
+
+it("Should return Invalid input when an array is passed ", function() {
+    assert(
+      lib.sumOfPrimes(arr)=="Invalid Input"))
     );
   });
 
