@@ -31,7 +31,7 @@ describe("Test that constants are computed properly", function() {
     });
   it("Should return Invalid when decimal number is passed ", function() {
       assert(
-        lib.sumOfPrimes(11.5)=="Invalid Input"))
+        lib.sumOfPrimes(11.5)=="A Decimal was passed"))
       );
     });
 
@@ -43,13 +43,13 @@ describe("Test that constants are computed properly", function() {
 
   it("Should return invalid when a string is passes ", function() {
       assert(
-        lib.sumOfPrimes("SomeString")=="Invalid Input"))
+        lib.sumOfPrimes("SomeString")=="A string was passed"))
       );
     });
 
   it("Should return invalid when -1 is passed ", function() {
       assert(
-        lib.sumOfPrimes(-1)=="Should not recieve negative input"))
+        lib.sumOfPrimes(-1)=="Invalid Input"))
       );
     });
 
