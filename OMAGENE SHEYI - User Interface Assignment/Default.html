@@ -1,0 +1,51 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+    <title>GUEST INFORMATION MANAGEMENT SYSTEM</title>
+    <link href="main.css" rel="stylesheet" type="text/css" /> 
+    
+</head>
+
+<body>
+<div id="mainbody">
+    <div id="side1">
+        <div id="image">
+            <img alt="GuestLogo" src="images/guestlogo.png" id="guestlogo" />
+        </div>
+    </div>
+    <div id="side2">
+        <div id="Div1">
+            <img alt="GuestLogo" src="images/guesthead.png" id="guesthead" />
+            
+        </div>
+            <div id="loginform">
+                <form id="frmLogin" method="GET" action="" accept-charset="*">
+               <div id="optuser"><input type="Radio" ID="OptUser1" name="user" value="Staff"/>Staff User
+                <input type="radio" ID="OptUser1" name="user" value="Guest" checked /> Guest User</div>
+                <p id="Error Message"> </p>
+                <br />
+                    User name: <br />
+                    <input type="Text" ID="Username" />
+                    <p />
+                    Password:<br />
+                    <input type="password" ID="Password" />
+                    <p />
+                   <div id="btnloginholder">
+                   <a href="staff_home.html"> <img alt="LoginButton" src="images/login.png" id="btnlogin" /> 
+                   <input type="Button" ID="btntxtlogin" value="Sign In" BackColor="White" 
+                        BorderStyle="None" onclick="btntxtlogin_Click()" />
+                </a></div>
+
+                <div id="new_guest">
+                <br />
+                    &nbsp; &nbsp; <a href="" ID="new_guest_registration" >New Guest Register here</a>
+                </div>
+                
+                </form>
+            </div>
+    </div>
+ </div>
+</body>
+</html>
